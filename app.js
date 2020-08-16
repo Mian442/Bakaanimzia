@@ -10,7 +10,7 @@ var config = require("config");
 var cors = require("cors");
 var app = express();
 app.use(cors());
-var indexRouter = require("./routes/index");
+// var indexRouter = require("./routes/index");
 var userRouter = require("./routes/api/user");
 var animeRouter = require("./routes/api/anime");
 var recentRouter = require("./routes/api/recent");
@@ -31,7 +31,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 //Routes to express use
-app.use("/", indexRouter);
+// app.use("/", indexRouter);
 app.use("/api/user", userRouter);
 app.use("/api/anime", animeRouter);
 app.use("/api/recent", recentRouter);
@@ -40,6 +40,12 @@ app.use("/api/search", searchanimeRouter);
 app.use("/api/search/popular", searchpopularRouter);
 app.use("/api/genre", genreRouter);
 app.use("/api/image", imageRouter);
+
+app.use(express.static(path.join(__dirname, "client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/client/build/index.html"));
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
