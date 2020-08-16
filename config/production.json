@@ -1,0 +1,7 @@
+{
+  "db": "mongodb+srv://Mian442:11.22.33.Ab@bakaanimiza.wtog1.gcp.mongodb.net/bakaanimizia.bakaanimiza?retryWrites=true&w=majority",
+  "jwtPrivateKey": "PrivateKey",
+  "cloud_name": "dzmydscig",
+  "cloud_API_Key": 271797883958292,
+  "cloud_API_Secert": "Dvqc9eVCFnO9hPHVXvbvObcL8zc"
+}
