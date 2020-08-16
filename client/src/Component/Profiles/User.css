@@ -1,0 +1,30 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2196f3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e91e63;
+}
+
+@media screen and (max-width: 570px) {
+  .profile {
+    flex-direction: column !important;
+  }
+  .profile .lp {
+    width: 92% !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

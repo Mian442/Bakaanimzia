@@ -23,7 +23,6 @@ import { Link } from "react-router-dom";
 import ListCard from "../Card/ListCard";
 
 const Home = (props) => {
-  console.log("ff");
   const ser_err = useSelector((state) => state.Server.Server_Error);
   const ser_err_res = useSelector(
     (state) => state.Server.Server_Error_Response
