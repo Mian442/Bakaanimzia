@@ -4,6 +4,9 @@
 a {
   color: inherit !important;
 }
+span:hover {
+  color: inherit !important;
+}
 
 .App-logo {
   height: 40vmin;
