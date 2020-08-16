@@ -34,7 +34,9 @@
     "redux-thunk": "^2.3.0",
     "universal-cookie": "^4.0.3",
     "video-react": "^0.14.1",
-    "yup": "^0.29.2"
+    "yup": "^0.29.2",
+	    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
