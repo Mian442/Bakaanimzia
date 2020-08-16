@@ -7,38 +7,38 @@ import {
 } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import NavBar from "./Component/NavBar/NavBar";
-import Menubar from "./Component/Menubar/Menubar";
+import NavBar from "./Components/NavBar/NavBar";
+import Menubar from "./Components/Menubar/Menubar";
 
 import "./App.css";
 
-import Login from "./Component/Auth/Login";
-import Signup from "./Component/Auth/Signup";
-import User from "./Component/Profiles/User";
-import NewEpisode from "./Component/Profiles/Component/RightSide/New Episode/NewEpisode";
-import NewAdmin from "./Component/Profiles/Component/RightSide/New Admin/NewAdmin";
-import Profile from "./Component/Profiles/Component/RightSide/Profile/Profile";
-import Forbiden from "./Component/Forbiden Page/404Forbiden";
-import DeleteEpisode from "./Component/Profiles/Component/RightSide/Delete Episode/DeleteEpisode";
-import DeleteAnime from "./Component/Profiles/Component/RightSide/Delete Anime/DeleteAnime";
-import UpdateEpisode from "./Component/Profiles/Component/RightSide/Update Episode/UpdateEpisode";
-import UpdateAnime from "./Component/Profiles/Component/RightSide/Update Anime/UpdateAnime";
-import NotAuth from "./Component/Not Auth/NotAuth";
-import Home from "./Component/Home/Home";
-import Genre from "./Component/Genre/Genre";
-import Bookmark from "./Component/Profiles/Component/RightSide/Bookmark/Bookmark";
-import List from "./Component/List/List";
-import Footer from "./Component/Footer/Footer";
-import New from "./Component/Profiles/Component/RightSide/New Anime/New";
-import Mian from "./Component/Profiles/Component/Main/Mian";
-import DeletePopular from "./Component/Profiles/Component/RightSide/Delete Popular/DeletePopular";
-import AddPopular from "./Component/Profiles/Component/RightSide/Add Popular/AddPopular";
-import Popular from "./Component/Popular/Popular";
-import Ongoing from "./Component/Ongoing/Ongoing";
-import Latest from "./Component/Latest/Latest";
-import Anime from "./Component/Anime/Anime";
-import View from "./Component/View/View";
-import Search from "./Component/Search/Search";
+import Login from "./Components/Auth/Login";
+import Signup from "./Components/Auth/Signup";
+import User from "./Components/Profiles/User";
+import NewEpisode from "./Components/Profiles/Component/RightSide/New Episode/NewEpisode";
+import NewAdmin from "./Components/Profiles/Component/RightSide/New Admin/NewAdmin";
+import Profile from "./Components/Profiles/Component/RightSide/Profile/Profile";
+import Forbiden from "./Components/Forbiden Page/404Forbiden";
+import DeleteEpisode from "./Components/Profiles/Component/RightSide/Delete Episode/DeleteEpisode";
+import DeleteAnime from "./Components/Profiles/Component/RightSide/Delete Anime/DeleteAnime";
+import UpdateEpisode from "./Components/Profiles/Component/RightSide/Update Episode/UpdateEpisode";
+import UpdateAnime from "./Components/Profiles/Component/RightSide/Update Anime/UpdateAnime";
+import NotAuth from "./Components/Not Auth/NotAuth";
+import Home from "./Components/Home/Home";
+import Genre from "./Components/Genre/Genre";
+import Bookmark from "./Components/Profiles/Component/RightSide/Bookmark/Bookmark";
+import List from "./Components/List/List";
+import Footer from "./Components/Footer/Footer";
+import New from "./Components/Profiles/Component/RightSide/New Anime/New";
+import Mian from "./Components/Profiles/Component/Main/Mian";
+import DeletePopular from "./Components/Profiles/Component/RightSide/Delete Popular/DeletePopular";
+import AddPopular from "./Components/Profiles/Component/RightSide/Add Popular/AddPopular";
+import Popular from "./Components/Popular/Popular";
+import Ongoing from "./Components/Ongoing/Ongoing";
+import Latest from "./Components/Latest/Latest";
+import Anime from "./Components/Anime/Anime";
+import View from "./Components/View/View";
+import Search from "./Components/Search/Search";
 
 function App() {
   return (
@@ -47,9 +47,9 @@ function App() {
         <NavBar />
         <Menubar />
         <Switch>
-          <Route path="/login" exact component={Login} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/not-found" component={Forbiden} />
+          <Route path="/login" exact Components={Login} />
+          <Route path="/signup" Components={Signup} />
+          <Route path="/not-found" Components={Forbiden} />
           <Route
             path="/profile"
             exact
@@ -149,18 +149,18 @@ function App() {
               <User content={<Bookmark />} var={{ Bookmark: "contained" }} />
             }
           />
-          <Route path="/not-authorized" exact component={NotAuth} />
-          <Route path="/search/:search" exact component={Search} />
-          <Route path="/anime/:id" exact component={Anime} />
-          <Route path="/view/:id/:epid" exact component={View} />
-          <Route path="/latest" exact component={Latest} />
-          <Route path="/ongoing" exact component={Ongoing} />
-          <Route path="/popular" exact component={Popular} />
-          <Route path="/animelist/:alpha" exact component={List} />
-          <Route path="/animelist" exact component={List} />
-          <Route path="/genre/:genre" exact component={Genre} />
-          <Route path="/genre" exact component={Genre} />
-          <Route path="/" exact component={Home} />
+          <Route path="/not-authorized" exact Components={NotAuth} />
+          <Route path="/search/:search" exact Components={Search} />
+          <Route path="/anime/:id" exact Components={Anime} />
+          <Route path="/view/:id/:epid" exact Components={View} />
+          <Route path="/latest" exact Components={Latest} />
+          <Route path="/ongoing" exact Components={Ongoing} />
+          <Route path="/popular" exact Components={Popular} />
+          <Route path="/animelist/:alpha" exact Components={List} />
+          <Route path="/animelist" exact Components={List} />
+          <Route path="/genre/:genre" exact Components={Genre} />
+          <Route path="/genre" exact Components={Genre} />
+          <Route path="/" exact Components={Home} />
           <Redirect to="/not-found" />
         </Switch>
         <Footer />
