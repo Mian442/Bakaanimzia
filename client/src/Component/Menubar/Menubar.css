@@ -1,0 +1,88 @@
+.button:hover {
+  background-color: #232527;
+  border-radius: 7px;
+  border-bottom: 3px solid #007bff;
+}
+.menubar .MuiButton-root:hover {
+  color: white;
+  background-color: #232527 !important;
+}
+.button {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none !important;
+  height: inherit;
+}
+.button .MuiTypography-root {
+  width: fit-content;
+  margin: inherit;
+}
+.menubar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #dc004e;
+  position: relative;
+  box-shadow: 1px 1px 8px 3px black;
+}
+.menubar2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #dc004e;
+  box-shadow: 1px 1px 8px 3px black;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+@media screen and (max-width: 890px) {
+  #item1 {
+    margin-left: unset !important;
+  }
+  #item3 {
+    margin-right: unset !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #item4 .button:hover {
+    border-right: 3px solid #007bff;
+    border-left: 3px solid #007bff;
+    border-bottom: none;
+  }
+  #item4 ul > li {
+    margin: initial;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  #item3,
+  #item2 {
+    justify-content: center;
+    margin: 20px;
+  }
+  #item2 {
+    margin-right: 20px !important;
+  }
+  .menubar .MuiButtonBase-root {
+    margin-left: 10px !important;
+    align-self: center;
+    font-size: xx-large;
+  }
+  .menubar .MuiSvgIcon-root {
+    font-size: inherit;
+  }
+  .menubar {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

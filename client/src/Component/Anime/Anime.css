@@ -1,0 +1,17 @@
+.Anime {
+  background: rgb(218, 0, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(218, 0, 255, 1) 0%,
+    rgba(247, 20, 64, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .Anime > .details {
+    flex-direction: column;
+  }
+}

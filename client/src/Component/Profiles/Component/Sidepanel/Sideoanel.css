@@ -1,0 +1,9 @@
+@media screen and (max-width: 575px) {
+  .sd .sticky2 {
+    position: fixed !important;
+    z-index: 1000;
+  }
+  .sd button {
+    border-radius: 25px !important;
+  }
+}

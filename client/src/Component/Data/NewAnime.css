@@ -1,0 +1,33 @@
+.genre .MuiFormControlLabel-root {
+  width: 20% !important;
+}
+.video .MuiTableContainer-root {
+  width: 96%;
+  margin-right: 25px;
+}
+@media screen and (max-width: 991px) {
+  .video .MuiTableContainer-root {
+    width: 94% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .video .MuiTableContainer-root {
+    width: 92% !important;
+  }
+  .genre > .MuiFormGroup-row {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .genre .MuiFormControlLabel-root {
+    margin-left: 30px;
+  }
+  .genre > .wrap,
+  .MuiTypography-root {
+    text-align: left;
+    padding-left: 5px;
+  }
+  .genre .MuiFormControlLabel-root {
+    width: 100% !important;
+  }
+}
