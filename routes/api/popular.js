@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var validatePopular = require("../../Middleware/validatepopular");
+var validatePopular = require("../../Middleware/validatePopular");
 var auth = require("../../Middleware/auth");
 var admin = require("../../Middleware/admin");
 var { Popular } = require("../../Model/popular");
