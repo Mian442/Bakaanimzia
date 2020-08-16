@@ -24,7 +24,7 @@
 
 .card2 .genre:hover {
   text-decoration: underline;
-  color: rgb(11, 157, 241);
+  color: rgb(11, 157, 241) !important;
 }
 
 @media screen and (max-width: 768px) {
