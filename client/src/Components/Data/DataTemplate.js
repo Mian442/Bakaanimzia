@@ -564,7 +564,10 @@ const NewAnime = (props) => {
                 setOpen(false);
                 resetForm();
                 props.Upload_Null();
-                if (props.ser_res && props.ser_res.status === 200) {
+                if (
+                  props.ser_res.status !== null &&
+                  props.ser_res.status === 200
+                ) {
                   setSuccess(true);
                 }
               }}
