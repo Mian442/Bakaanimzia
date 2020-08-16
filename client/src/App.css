@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+a {
+  color: inherit !important;
+}
 
 .App-logo {
   height: 40vmin;
